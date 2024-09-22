@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --maincolor:#2ec8a6;
+    --secondcolor:#f8a803;
+    --thirdcolor:#f4ab01;
+    --textcolor:#090909;
+}
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+    font-family: "Inter", sans-serif;
+    
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(23, 28, 173, 0.793);
+    z-index: 1000;
+    background-color: white !important;
+    box-shadow: 0.5rem 0.5rem ;
+    z-index: 999;
+    background-color: aliceblue;
+
+}
+.logo{
+    width: 150px;
+}
+.logo img{
+    width: 88%;
+}
+.navbar a{
+    color: var(--textcolor);
+    font-size: 1.7rem;
+    margin: 1rem;
+    position: relative;
+    transition:0.5s ;
+    
+}
+.navbar a :hover{
+color: var(--maincolor);
+
+}
+.navbar a ::after{
+    content: "";
+    background-color: var(--maincolor);
+    width: 0;
+    position: absolute;
+    height: 0.1rem;
+    left: 0;
+    margin-top: 0.5rem;
+    top: 100%;
+    transition:0.5s ;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+#menu-bars{
+    color: var(--textcolor);
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    display: none;
+}
+#menu-bars:hover{
+    color: var(--maincolor);
+}
+.right-icons .btn{
+
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: var(--textcolor);
+    border: 0.2rem solid var(--maincolor);
+    text-decoration: none;
+    cursor: pointer;
+}
+.right-icons .btn:hover{
+        color: var(--maincolor);
+}
+
+/*header section ended*/
+/*home section started*/
+.main-home{
+    padding:2rem 7%;
+    background-image: url(images/WhatsApp\ Image\ 2024-09-22\ at\ 12.24.31\ AM.jpeg);
+    width: 99%;
+    min-height: 99vh;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:7rem ;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.home .home-left-content{
+    flex: 1 1 35rem
+}
+
+
+.home .home-left-content span{
+font-size: 1.7rem;
+color: var(--maincolor);
+padding: 1rem 1;
+font-weight: bolder;
+}
+.home .home-left-content h2{
+    font-size: 49px;
+    margin: 1rem 1 ;
+}
+
+.home-btn{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.home-btn a{
+    display: inline-block;
+    padding: 1.5rem  3rem;
+    background-color: var(--maincolor);
+    font-size: 1.7rem;
+    color: white;
+transition: 1sec ease;
+}
+
+
+.home-btn a:hover{
+    padding:1.5rem 2.5rem;
+}
+.homebtnsec{
+    background-color: transparent !important;
+    color: var(--textcolor) !important;
+    border: 1px solid var(--maincolor);
+}
+
+
+
+.home .home-right-content img{
+    flex: 1 2 45rem;
+}
+
+.home .home-right-content img{
+    width: 77%;
+    margin-top: 2rem;
+}
+
+.technology{
+    padding: 1rem 5%;
+    font-size: 15px;
+}
+.main-technology{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: var(--textcolor);
+}
+.inner-technology{
+    flex: 1 1 299px;
+    padding: 3rem;
+    box-shadow: #090909;
+    background-image: url(images/backgroung-pattern-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.inner-technology:hover{
+    background: var(--maincolor);
+}
+.inner-technology:hover h2{
+    color: white;
+}
+.inner-technology:hover p{
+    color: white;
+}
+
+.main-technology{
+    color: var(--textcolor);
+}
+
+
+/*home section ended*/
+/*about us section*/
+.main-about{
+    padding: 2rem 7%;
+    width: 99%;
+    background-image: url(images/blurbg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.inner-main-about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.about-inner-content-left{
+flex: 1 1 39rem;
+}
+.about-inner-content-left img{
+    width: 89%;
+}
+
+
+.about-inner-content{
+    flex: 1 1 45rem;
+}
+.about-inner-content img{
+    width: 85%;
+}
+.about-right-content h2{
+   font-size: 38px;
+   padding: 1.5rem 1;
+   color: var(--textcolor);
+}
+.about-right-content p{
+    font-size: 1.7rem;
+    padding: 1.5rem 1;
+    color: var(--textcolor);
+}
+.main-doctor{
+    padding: 2rem 7%;
+    background-image: url(images/backgroung-pattern-3.png);
+    width:99%;
+    background-size: cover;
+    background-position: center;
+
+}
+.doctors-heading{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: #2ec8a6;
+    cursor: pointer;
+}
+.main-inner-doctor{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    
+}
+
+.doc-poster{
+    flex: 1 1 299px;
+}
+.doc-poster img{
+    width: 99%;
+    border: 1rem solid rgb(243, 238, 224);
+}
+.doc-poster::after{
+    content: " ";
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    left: 1;
+    bottom: 1;
+    z-index: 1;
+    bottom: -199px;
+    transition: 1s;
+
+}
+
+.doc-poster:hover:after{
+    bottom: -99px;
+}
+.doc-details{
+    width: 12%;
+position: absolute;
+text-align: center;
+z-index: 2;
+bottom: 1;
+left: 55%;
+}
+
+.doc-details h2{
+    position: absolute;
+    bottom: 78%;
+    color: black;
+
+}
+.our-services{
+    width: 99%;
+    padding: 3rem 7%;
+}
+.services-heading h2{
+    font-size: 39px;
+    color: var(--maincolor);
+    text-align: center;
+    padding: 1rem 1;
+}
+.main-services{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.inner-services{
+    flex: 1 1 299px;
+    padding: 1rem 1;
+}
+.inner-services h3{
+    font-size: 2rem;
+    padding: 1rem 1;
+}
+
+
+
+@media(max-width: 768px){
+    html{
+        font-size: 55%;
+    }
+.right-icons{
+    display: flex;
+    align-items: center;
+}
+
+    #menu-bars{
+        display: initial;
+    }
+    header{
+        padding: 2rem;
+    }
+    .navbar{
+        position: absolute;
+        top: 99%;
+        left: 1%;
+        height: 99vh;
+        width: 99%;
+    }
+    .navbar.active{
+        left: 1;
+    }
+    .navbar a{
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+        border: 1px solid var(--textcolor);
+    }
+    .home .home-left-content{
+        margin-top: 49px;
+        padding: 2rem;
+    }
+    .home .home-left-content h2{
+        font-size: 29px;
+    }
+    .main-technology{
+       margin-top: -99%;
+    }
+    .about-right-content h2{
+        font-size: 35px;
+     }
+}
+
